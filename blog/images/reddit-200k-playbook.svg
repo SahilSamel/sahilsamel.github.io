@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 210" width="100%" height="auto">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; stroke: #e5e5e5; stroke-width: 1; rx: 8px; }
+      .sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #576f76; font-weight: 500; }
+      .sub-name { font-weight: 700; fill: #1c1c1c; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; font-weight: 700; fill: #0f1a1c; line-height: 1.4; }
+      .badge { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #0055ff; }
+      .badge-bg { fill: #e8f0fe; rx: 10px; }
+      .snippet { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; fill: #4a5568; }
+      .meta { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #576f76; }
+      .pill { fill: #f2f4f5; rx: 14px; }
+    </style>
+  </defs>
+
+  <rect width="700" height="210" class="bg" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.04))" />
+
+  <!-- Subreddit info -->
+  <circle cx="36" cy="34" r="14" fill="#ff4500" />
+  <circle cx="36" cy="34" r="7" fill="#ffffff" />
+  <text x="60" y="38" class="sub"><tspan class="sub-name">r/SaaS</tspan> • Posted by u/mikehill_ • 3 mo. ago</text>
+
+  <!-- Title -->
+  <text x="24" y="78" class="title">I posted my playbook for launching SaaS to $200k MRR. Ask me anything.</text>
+
+  <!-- Flair -->
+  <rect x="24" y="94" width="76" height="20" class="badge-bg" />
+  <text x="34" y="108" class="badge">Case Study</text>
+
+  <!-- Snippet -->
+  <text x="24" y="136" class="snippet">Instead of inventing novel ideas, we entered crowded B2B markets where people were</text>
+  <text x="24" y="156" class="snippet">already paying. Focused entirely on G2 review gaps, SEO alternative pages, and simple UX...</text>
+
+  <!-- Footer Stats -->
+  <rect x="24" y="172" width="78" height="26" class="pill" />
+  <path d="M 36 186 L 42 179 L 48 186 Z" fill="#ff4500" />
+  <text x="54" y="189" class="meta" fill="#ff4500">482</text>
+
+  <rect x="110" y="172" width="115" height="26" class="pill" />
+  <text x="124" y="189" class="meta">💬 143 Comments</text>
+
+  <rect x="233" y="172" width="75" height="26" class="pill" />
+  <text x="247" y="189" class="meta">Share</text>
+</svg>

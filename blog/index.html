@@ -111,6 +111,45 @@
       text-decoration-color: var(--link-hover);
     }
 
+    .post-figure {
+      margin: 1.75rem 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .post-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .figure-stack {
+      margin: 1.75rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .figure-stack .post-figure {
+      margin: 0;
+    }
+
+    .figure-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .pie-figure {
+      max-width: 420px;
+      margin: 2rem auto;
+      background: #18191c;
+      border: 1px solid #2e3035;
+    }
+
     .sign-off {
       margin-top: 3rem;
       font-weight: 600;
@@ -128,6 +167,9 @@
       .content p {
         font-size: 1.05rem;
         line-height: 1.75;
+      }
+      .figure-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -158,7 +200,11 @@
 
       <p>I hop on reddit, try to find answers, end up on <a href="https://www.reddit.com/r/SaaS/" target="_blank" rel="noopener noreferrer">r/SaaS</a>.</p>
 
-      <p>Some digging and find a legit guy. Some guy who made a <a href="https://www.reddit.com/r/SaaS/comments/1rk95b9/i_posted_my_playbook_for_launching_saas_to_200k/" target="_blank" rel="noopener noreferrer">$200k MRR SaaS business</a>. Felt too good to be true. Did some digging, found his <a href="https://www.youtube.com/watch?v=67zh8_yiPh4" target="_blank" rel="noopener noreferrer">podcast appearance</a>, Starter Story video. Genuinely intrigued how this guy did it.</p>
+      <p>Some digging and find a legit guy. Some guy who made a $200k MRR SaaS business. Felt too good to be true. Did some digging, found his <a href="https://www.youtube.com/watch?v=67zh8_yiPh4" target="_blank" rel="noopener noreferrer">podcast appearance</a>, Starter Story video. Genuinely intrigued how this guy did it.</p>
+
+      <figure class="post-figure">
+        <img src="images/reddit-playbook.png" alt="Mike Hill Reddit playbook post: $200k MRR" />
+      </figure>
 
       <p>Tried to follow his idea, look for problems in a similar way. Tried to simulate how he must have done it.</p>
 
@@ -166,7 +212,21 @@
 
       <p>Tried to simulate it, go on <a href="https://www.g2.com/categories?view_hierarchy=true" target="_blank" rel="noopener noreferrer">G2</a>. Find such industries and do what Mike did.</p>
 
-      <p>I went through his Blog first, his <a href="https://curator.io/blog/curator-io-vs-walls-io-choosing-a-walls-io-alternative" target="_blank" rel="noopener noreferrer">“Alternative to…”</a> SEO hack. Look through his competitors. Mike is true to his words. Went through curator.io’s competitors <a href="https://www.g2.com/products/juicer/reviews?filters%5Bnps_score%5D=4&qs=pros-and-cons&filters%5Bcomment_answer_values%5D=&order=g2_default&utf8=%E2%9C%93#ai_summary" target="_blank" rel="noopener noreferrer">reviews</a>, and yes, curator.io has every feature those reviews whine about. <a href="https://www.g2.com/products/walls-io/reviews/walls-io-review-12416127" target="_blank" rel="noopener noreferrer">Easy to use</a>, <a href="https://www.g2.com/products/walls-io/reviews/walls-io-review-10976712" target="_blank" rel="noopener noreferrer">give me customizable cards</a>, <a href="https://www.g2.com/products/walls-io/reviews/walls-io-review-10932385" target="_blank" rel="noopener noreferrer">lInkedIn feed</a>. All of that. Mike did do this.</p>
+      <p>I went through his Blog first, his <a href="https://curator.io/blog/curator-io-vs-walls-io-choosing-a-walls-io-alternative" target="_blank" rel="noopener noreferrer">“Alternative to…”</a> SEO hack. Look through his competitors. Mike is true to his words. Went through curator.io’s competitors reviews, and yes, curator.io has every feature those reviews whine about. Easy to use, give me customizable cards, lInkedIn feed. All of that. Mike did do this.</p>
+
+      <div class="figure-stack">
+        <figure class="post-figure">
+          <img src="images/juicer-g2-summary.png" alt="Juicer G2 Pros and Cons: Quick AI summary on limited customization" />
+        </figure>
+        <div class="figure-grid">
+          <figure class="post-figure">
+            <img src="images/walls-io-review-1.png" alt="Walls.io G2 Review by Abby P." />
+          </figure>
+          <figure class="post-figure">
+            <img src="images/walls-io-review-2.png" alt="Walls.io G2 Review: Niceeeeee" />
+          </figure>
+        </div>
+      </div>
 
       <p>Notice one thing off, I didn’t go the way Mike instructs me to. No, not through top down, I went bottom up. I went through curator.io to his competitors.</p>
 
@@ -180,9 +240,13 @@
 
       <p>Dug more, how did he actually find this industry, do all of this, built it all in 4 months and all.</p>
 
-      <p>He did <a href="https://www.bandt.com.au/holler-ceo-and-founder-mike-hill-leaves-the-agency/" target="_blank" rel="noopener noreferrer">exit his company</a>, <a href="https://www.agencyspotter.com/holler-australia" target="_blank" rel="noopener noreferrer">holler Australia</a>. Maybe he had money? But wait, what does Holler do? Oh wait, it’s an Ad Agency!</p>
+      <p>He did exit his company, <a href="https://www.agencyspotter.com/holler-australia" target="_blank" rel="noopener noreferrer">holler Australia</a>. Maybe he had money? But wait, what does Holler do? Oh wait, it’s an Ad Agency!</p>
 
-      <p><a href="https://www.adnews.com.au/news/founder-and-ceo-of-holler-resurfaces-at-startup-studio-for-brands" target="_blank" rel="noopener noreferrer">Mike was the CEO of Holler</a>??!! For 10 years??</p>
+      <p>Mike was the CEO of Holler??!! For 10 years??</p>
+
+      <figure class="post-figure">
+        <img src="images/holler-mike-hill-leaves.png" alt="B&amp;T: Holler CEO and founder Mike Hill leaves the agency" />
+      </figure>
 
       <p>Wait, his first 3 products and his past industry, they match. Turns out Mike used to work in Holler UK, a well established company back in UK as a Flash Developer. Damn. They sent him to Australia to build their Australian outlet.</p>
 
@@ -232,7 +296,11 @@
 
       <p>Peter is the people’s man. The industry itself is a lose one, hop on to the next idea the second you can. It’s unorganized, it’s young, it’s messy – it’s waves in a ocean of nomads. Ride it, catch the waves one by one – keep building.</p>
 
-      <p>This difference shows. Peter has <a href="https://levels.io/projects" target="_blank" rel="noopener noreferrer">countless projects</a> and is <a href="https://x.com/levelsio" target="_blank" rel="noopener noreferrer">constantly posting like an influencer</a>. Mike has 5, and works like a business man promoting his business.</p>
+      <p>This difference shows. Peter has countless projects and is <a href="https://x.com/levelsio" target="_blank" rel="noopener noreferrer">constantly posting like an influencer</a>. Mike has 5, and works like a business man promoting his business.</p>
+
+      <figure class="post-figure pie-figure">
+        <img src="images/levelsio-projects-pie.png" alt="Pieter Levels projects breakdown pie chart: 8% success, 17% failed, 61% N/A" />
+      </figure>
 
       <p>What do we learn from this?</p>
 
