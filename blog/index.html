@@ -7,11 +7,12 @@
   <style>
     :root {
       --bg: #fafafa;
-      --text: #1f1f1f;
-      --text-muted: #6e6e6e;
-      --border: #e6e6e6;
-      --link: #111;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --border: #e8e8e8;
+      --link: #000;
       --link-hover: #0056b3;
+      --quote-border: #111;
     }
 
     * {
@@ -32,12 +33,12 @@
 
     .container {
       max-width: 680px;
-      margin: 60px auto 100px;
+      margin: 60px auto 120px;
       padding: 0 24px;
     }
 
     .nav-bar {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     .back-link {
@@ -60,12 +61,20 @@
     }
 
     .post-title {
-      font-size: 2.25rem;
+      font-size: 2.35rem;
       font-weight: 800;
-      line-height: 1.25;
-      letter-spacing: -0.03em;
+      line-height: 1.2;
+      letter-spacing: -0.035em;
       color: #000;
       margin-bottom: 1rem;
+    }
+
+    .post-subtitle {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      font-weight: 400;
     }
 
     .post-meta {
@@ -80,14 +89,16 @@
     .divider {
       border: none;
       border-top: 1px solid var(--border);
-      margin: 2.5rem 0;
+      margin: 2.5rem 0 3rem;
     }
 
-    .section-break {
-      border: none;
-      border-top: 1px dashed #dcdcdc;
-      margin: 2.75rem auto;
-      width: 40%;
+    .content h2 {
+      font-size: 1.55rem;
+      font-weight: 750;
+      letter-spacing: -0.025em;
+      color: #000;
+      margin: 3.25rem 0 1.25rem;
+      line-height: 1.3;
     }
 
     .content p {
@@ -95,6 +106,14 @@
       color: #242424;
       font-size: 1.125rem;
       letter-spacing: -0.01em;
+    }
+
+    .content blockquote {
+      margin: 2rem 0;
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      border-left: 3px solid var(--quote-border);
+      font-style: italic;
+      color: #333;
     }
 
     .content a {
@@ -112,12 +131,12 @@
     }
 
     .post-figure {
-      margin: 1.75rem 0;
+      margin: 2.25rem 0;
       border-radius: 8px;
       overflow: hidden;
       border: 1px solid var(--border);
       background: #ffffff;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
     }
 
     .post-figure img {
@@ -126,8 +145,17 @@
       display: block;
     }
 
+    .post-figure figcaption {
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background: #fafafa;
+      border-top: 1px solid #f0f0f0;
+      text-align: center;
+    }
+
     .figure-stack {
-      margin: 1.75rem 0;
+      margin: 2.25rem 0;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -144,16 +172,17 @@
     }
 
     .pie-figure {
-      max-width: 420px;
-      margin: 2rem auto;
+      max-width: 440px;
+      margin: 2.5rem auto;
       background: #18191c;
       border: 1px solid #2e3035;
     }
 
     .sign-off {
-      margin-top: 3rem;
-      font-weight: 600;
-      color: #444;
+      margin-top: 3.5rem;
+      font-weight: 700;
+      color: #111;
+      font-size: 1.15rem;
     }
 
     @media (max-width: 640px) {
@@ -162,7 +191,14 @@
         padding: 0 18px;
       }
       .post-title {
-        font-size: 1.75rem;
+        font-size: 1.85rem;
+      }
+      .post-subtitle {
+        font-size: 1.1rem;
+      }
+      .content h2 {
+        font-size: 1.35rem;
+        margin-top: 2.5rem;
       }
       .content p {
         font-size: 1.05rem;
@@ -182,37 +218,39 @@
 
     <header class="post-header">
       <h1 class="post-title">The $200k/mo Bootstrapped Lie: Distribution vs Domain</h1>
+      <p class="post-subtitle">Why the advice on r/SaaS almost ruined my startup—and the hidden unfair advantages behind Mike Hill and Pieter Levels.</p>
       <div class="post-meta">
         <time datetime="2026-11">November 2026</time>
         <span>&bull;</span>
-        <span>5 min read</span>
+        <span>6 min read</span>
       </div>
     </header>
 
     <hr class="divider" />
 
     <article class="content">
-      <p>I was lurking on <a href="https://www.reddit.com/r/SaaS/" target="_blank" rel="noopener noreferrer">r/SaaS</a> and was looking through top posts to understand how to sell my product.</p>
+      <h2>1. The $0 Reality Check</h2>
+      
+      <p>I was lurking on <a href="https://www.reddit.com/r/SaaS/" target="_blank" rel="noopener noreferrer">r/SaaS</a> looking through top posts to understand how to sell my product.</p>
 
-      <p>Already created a stupid <a href="https://github.com/SahilSamel/freelance" target="_blank" rel="noopener noreferrer">Gym Management Software</a>, there was real market demand – most gyms around me didn’t have any software. Heck, the gym I go to uses Excel, with a receptionist 24/7. Thought I had the right market. Nobody is building it cheap, nobody is listening to their actual needs. If I listen and ask for feedback, I might build something here.</p>
+      <p>I had already created a stupid <a href="https://github.com/SahilSamel/freelance" target="_blank" rel="noopener noreferrer">Gym Management Software</a>. In my head, there was real market demand—most gyms around me didn’t have any software. Heck, the gym I go to uses Excel, with a receptionist sitting there 24/7. I genuinely thought I had found the right market. Nobody was building it cheap, and nobody was listening to their actual needs. My hypothesis was simple: if I listen, ask for feedback, and ship fast, I might build a real business here.</p>
 
-      <p>I was wrong, I had no contacts with any gyms, in-person talks led to ignored phone calls, cold messaging led to empty read receipts. I didn’t understand why nobody wanted a solution for their exact problem. Did my product go wrong? Did I sell wrong?</p>
+      <p>I was completely wrong.</p>
 
-      <p>I hop on Reddit, try to find answers, end up on <a href="https://www.reddit.com/r/SaaS/" target="_blank" rel="noopener noreferrer">r/SaaS</a>.</p>
+      <p>I had zero contacts with any gyms. In-person talks led to ignored phone calls. Cold messaging led to empty read receipts. I couldn’t understand why nobody wanted a solution for their exact problem. Did my product go wrong? Did I sell wrong? I hopped back on Reddit to find answers, ending up right back on r/SaaS.</p>
 
-      <p>Some digging and find a legit guy. Some guy who made a $200k MRR SaaS business. Felt too good to be true. Did some digging, found his <a href="https://www.youtube.com/watch?v=67zh8_yiPh4" target="_blank" rel="noopener noreferrer">podcast appearance</a>, Starter Story video. Genuinely intrigued how this guy did it.</p>
+      <h2>2. The $200k/mo "Micro-SaaS" Playbook</h2>
+
+      <p>After some digging, I found a guy who claimed to have built a $200k MRR bootstrapped SaaS portfolio. It felt too good to be true. I did some digging, watched his <a href="https://www.youtube.com/watch?v=67zh8_yiPh4" target="_blank" rel="noopener noreferrer">podcast appearance</a>, and found his Starter Story video. I was genuinely intrigued by how he pulled it off.</p>
 
       <figure class="post-figure">
         <img src="images/reddit-playbook.png" alt="Mike Hill Reddit playbook post: $200k MRR" />
+        <figcaption>Mike Hill's viral post on r/SaaS laying out his micro-SaaS playbook</figcaption>
       </figure>
 
-      <p>Tried to follow his idea, look for problems in a similar way. Tried to simulate how he must have done it.</p>
+      <p>I tried to follow his idea, look for problems the way he prescribed, and simulate how he must have done it. His advice sounded clean: don't chase blue oceans. Go on <a href="https://www.g2.com/categories?view_hierarchy=true" target="_blank" rel="noopener noreferrer">G2</a>, find established categories, look at 2- and 3-star competitor reviews, see what users whine about, and build a simpler, cheaper alternative.</p>
 
-      <p>Something rings in my head, all of this guy’s most profitable companies revolve around the Ad Agency business. Why would he go this deep in one industry? Maybe he built curator.io first, then thought, there are more problems in this industry. Look through <a href="https://curator.io" target="_blank" rel="noopener noreferrer">curator.io</a>, seems really niche, something I wouldn’t even think about. “Boring.”</p>
-
-      <p>Tried to simulate it, go on <a href="https://www.g2.com/categories?view_hierarchy=true" target="_blank" rel="noopener noreferrer">G2</a>. Find such industries and do what Mike did.</p>
-
-      <p>I went through his Blog first, his <a href="https://curator.io/blog/curator-io-vs-walls-io-choosing-a-walls-io-alternative" target="_blank" rel="noopener noreferrer">“Alternative to…”</a> SEO hack. Look through his competitors. Mike is true to his word. Went through curator.io’s competitors' reviews, and yes, curator.io has every feature those reviews whine about. Easy to use, give me customizable cards, LinkedIn feed. All of that. Mike did do this.</p>
+      <p>I went through his blog first, specifically his <a href="https://curator.io/blog/curator-io-vs-walls-io-choosing-a-walls-io-alternative" target="_blank" rel="noopener noreferrer">“Alternative to…”</a> SEO hack, and looked through his competitors. Mike was true to his word. I went through his competitors' reviews, and sure enough, Curator.io has every single feature those reviews whine about: easy to use, customizable cards, LinkedIn feeds. All of it. Mike really did build for those gaps.</p>
 
       <div class="figure-stack">
         <figure class="post-figure">
@@ -223,26 +261,21 @@
             <img src="images/walls-io-review-1.png" alt="Walls.io G2 Review by Abby P." />
           </figure>
           <figure class="post-figure">
-            <img src="images/walls-io-review-2.png" alt="Walls.io G2 Review: Niceeeeee" />
+            <img src="images/walls-io-review-2.png" alt="Walls.io G2 Review complaining about video autoplay" />
           </figure>
         </div>
+        <figcaption>The G2 competitor reviews whining about the exact features Curator.io ended up highlighting</figcaption>
       </div>
 
-      <p>Notice one thing off, I didn’t go the way Mike instructs me to. No, not through top-down, I went bottom-up. I went through curator.io to his competitors.</p>
+      <h2>3. Reversing the Crime Scene: Who is Mike Hill?</h2>
 
-      <p>Let's try in reverse and see if I can find curator.io via G2. Try it, and realize, curator.io and all its competitors lie in a very big category on G2 – specifically <a href="https://www.g2.com/categories/other-social-media" target="_blank" rel="noopener noreferrer">“Other Social Media Software”</a>. How the hell did Mike search his specific niche in so much shit? There's shit related to security, AI-generated content and everything.</p>
+      <p>Then I noticed one glaring thing: I didn’t find this opportunity the way Mike instructs founders to. I didn’t go top-down; I went bottom-up. I started with Curator.io and worked backward to his competitors.</p>
 
-      <p>Thought about it for a second. If on G2, I went through every category, and then every different product sorted by reviews and ratings. And then if the product had bad UI, or bad reviews, missing features, then find its competitors, then see how big the industry is, then make sure it isn’t some deep integrated software that solves multiple problems at once, just doesn’t do one feature right (Cause then my users will need those other integrations too, which will be hard to ship, after all <a href="https://curator.io" target="_blank" rel="noopener noreferrer">curator</a>, <a href="https://frill.co" target="_blank" rel="noopener noreferrer">frill</a>, <a href="https://juuno.co" target="_blank" rel="noopener noreferrer">juuno</a> do one thing and they do it right. There is only so much you can do in terms of features in a social media aggregator software), then build it over 2-4 months, then distribute it, have blogs written, make sure LLMs pick my product and recommend that…..That’s like a year or 2, or more.</p>
+      <p>So I decided to test the reverse: can you actually find a product like Curator.io cold on G2? I tried it, and immediately realized that Curator.io and all its competitors sit inside a massive, cluttered category on G2 called <a href="https://www.g2.com/categories/other-social-media" target="_blank" rel="noopener noreferrer">“Other Social Media Software”</a>. How the hell did Mike find his specific niche in that sea of noise? There’s software related to security, compliance, AI generation, and everything in between.</p>
 
-      <p>And yes, curator was built in 4 months, but wait….how?</p>
+      <p>Think about what that top-down process actually requires: go through every category on G2, inspect every product sorted by ratings, find ones with bad UI or missing features, check how big the TAM is, ensure it’s not deeply integrated enterprise bloat that requires 50 integrations to function, build it over 2–4 months, write blogs, optimize for LLMs... That’s a 1- to 2-year discovery pipeline, or more. Yet Curator was built in 4 months. How?</p>
 
-      <hr class="section-break" />
-
-      <p>Dug more, how did he actually find this industry, do all of this, built it all in 4 months and all.</p>
-
-      <p>He did exit his company, <a href="https://www.agencyspotter.com/holler-australia" target="_blank" rel="noopener noreferrer">Holler Australia</a>. Maybe he had money? But wait, what does Holler do? Oh wait, it’s an Ad Agency!</p>
-
-      <p>Mike was the CEO of Holler??!! For 10 years??</p>
+      <p>I dug deeper. How did he actually find this industry and build it so quickly? It turns out he exited his company, <a href="https://www.agencyspotter.com/holler-australia" target="_blank" rel="noopener noreferrer">Holler Australia</a>. What does Holler do? It’s an Ad Agency. And Mike wasn't just an employee—he was the CEO of Holler for 10 years!</p>
 
       <div class="figure-grid">
         <figure class="post-figure">
@@ -253,69 +286,57 @@
         </figure>
       </div>
 
-      <p>Wait, his first 3 products and his past industry, they match. Turns out Mike used to work in Holler UK, a well established company back in the UK as a Flash Developer. Damn. They sent him to Australia to build their Australian outlet.</p>
+      <p>Wait. His first three SaaS products and his past industry match completely. Mike originally worked at Holler UK as a Flash developer before they sent him to Australia to build their agency outlet. He built it into a powerhouse and had it acquired by the Hannan Family (IPMG). He didn’t discover these problems by scraping G2; he stumbled onto them during a decade of running an agency.</p>
 
-      <p>Mike is an expert in this industry, he built it into one of the biggest players and had it acquired by the Hannan Family in Australia. Damn, so he knew these domains. He didn’t find them, he stumbled onto them while working as CEO. He knew these exact problems.</p>
-
-      <p>But he doesn’t code, and rather gives equity to his Engineer. Wait, who is the Engineer??? Oh ok, this guy worked under Mike at Holler Aus.</p>
-
-      <p>Oh holdup, this explains it – CEO frustrated with old tech that keeps breaking down, engineer who has solution – Let's build a company. That’s why he gave that equity out.</p>
+      <p>And he doesn’t code backend software. He gives equity to his engineer. Who is the engineer? A developer who worked under Mike at Holler. The pieces click together: a CEO frustrated with expensive, fragile agency software, paired with an in-house engineer who can build a clean solution.</p>
 
       <figure class="post-figure">
         <img src="images/mike-reddit-agency-thom.png" alt="Mike Hill on Reddit: When we were in agency land, Thom built Curator" />
+        <figcaption>The smoking gun: Mike admitting on Reddit how Curator was born directly out of agency client budgets</figcaption>
       </figure>
 
-      <p>That also explains why he did this, he had two other ventures as well – Puffling and AnyCamp? Why doesn’t he mention them? Oh, wait, now it makes sense – He is a domain expert in the Ad Agency fleet, he tried to build those 2 companies the way we do – “Think” this is a problem, but no it isn’t.</p>
+      <p>That also explains why his two outside ventures—Puffling and AnyCamp—didn't take off the same way. When he stepped outside the ad agency fleet and tried to guess problems the way we do, it didn't work. His engineer built the backend; Mike drove the distribution. But crucially, he had the network and distribution before day one. He was the CEO of a top Australian ad agency.</p>
 
-      <p>That is why his co-founder has the equity, the engineer did the backend. Mike did the distribution – he said it himself. But then, probably already had customers before launch. He had distribution already, he was the CEO of one of the Top Ad Agencies in Australia. Which means, he did have the reach.</p>
+      <p>Why sell us the G2 review-mining dream? Because his posts about helping SaaS founders are marketing too. He stays in his domain, solves problems he lived with for 10 years, and markets his playbook brilliantly to build his audience. He knows where the money is and who has the credit cards.</p>
 
-      <p>Then why sell us this dream? And he didn’t lie completely either. So his posts on helping SaaS founders is marketing too??? Yup, marketing for sure.</p>
+      <h2>4. The Solo Trend Surfer: Pieter Levels</h2>
 
-      <p>All in all, this guy remains in the same industry, and markets himself as a SaaS founder. Which is brilliant, he gets a lot of distribution this way. But the truth remains, the finding problems part – He solved his own problems that he probably faced for 10 years. He had a network of people that also knew the problem and faced the issues with him, he just marketed it brilliantly. He says it himself, his main source of traction was his blog, probably also his connections. He knows where the money is, what the problems are, and he is there to solve it. At least until he no longer has domain expertise or people in the industry suddenly forget him, which is basically never.</p>
+      <p>Now onto <a href="https://levels.io" target="_blank" rel="noopener noreferrer">Peter Levels</a>. Right off the bat, his trajectory feels like the famous formula of <a href="https://levels.io/12-startups-12-months/" target="_blank" rel="noopener noreferrer">absurd challenges</a> to generate attention: <a href="https://makebook.io" target="_blank" rel="noopener noreferrer">Distribution over Product</a>.</p>
 
-      <hr class="section-break" />
+      <p>Let's break his journey down. He ran a successful <a href="https://pandamixshow.com" target="_blank" rel="noopener noreferrer">YouTube channel</a> (Panda Mix Show), made money, and completed his <a href="https://levels.io/projects#proj-bachelor-of-science-bsc-in-business-administration-at-vu-university-amsterdam" target="_blank" rel="noopener noreferrer">bachelor’s</a> and <a href="https://levels.io/projects#proj-master-of-science-msc-in-business-administration-at-rotterdam-school-of-management-erasmus-university" target="_blank" rel="noopener noreferrer">Master’s</a> in Business Administration by 25. When <a href="https://pandamixshow.com" target="_blank" rel="noopener noreferrer">YouTube demonetized copyrighted music</a>, his income took a hit. Why did he <a href="https://levels.io/moving-to-chiang-mai/" target="_blank" rel="noopener noreferrer">move to Thailand</a>? To radically lower his cost of living and save cash.</p>
 
-      <p>Now onto <a href="https://levels.io" target="_blank" rel="noopener noreferrer">Peter Levels</a>.</p>
+      <p>His early SaaS, <a href="https://levels.io/tubelytics/" target="_blank" rel="noopener noreferrer">Tubelytics</a>, failed. But while living as a nomad trying to build an automated startup, he hit real, everyday friction. <a href="https://nomadlist.com" target="_blank" rel="noopener noreferrer">NomadList</a>, <a href="https://remoteok.com" target="_blank" rel="noopener noreferrer">RemoteOk</a>, and <a href="https://photoai.com" target="_blank" rel="noopener noreferrer">PhotoAI</a> weren't picked out of thin air. They were built for his domain: nomads, remote workers, and online creators.</p>
 
-      <p>Right off the bat, feels like the known formula of <a href="https://levels.io/12-startups-12-months/" target="_blank" rel="noopener noreferrer">absurd challenges</a> to get attention. <a href="https://makebook.io" target="_blank" rel="noopener noreferrer">Distribution over Product</a>. Yes, I know, but let's break his journey down.</p>
+      <p>The difference is his distribution. Nomads are extremely online. They want tools that help them sustain their lifestyle, and they’re willing to pay. It’s a self-reinforcing flywheel: build for nomads, share transparent metrics, nomads celebrate the success, free word-of-mouth brings more users, and sales compound. He <a href="https://levels.io" target="_blank" rel="noopener noreferrer">blogs it meticulously</a>, but that transparency is also his customer acquisition engine.</p>
 
-      <p>Ran a <a href="https://pandamixshow.com" target="_blank" rel="noopener noreferrer">YouTube channel</a>, ran it successfully, had money, went to <a href="https://levels.io/projects#proj-master-of-science-msc-in-business-administration-at-rotterdam-school-of-management-erasmus-university" target="_blank" rel="noopener noreferrer">good colleges</a>. 25 by the time he got out of college.</p>
+      <p>Because nomad trends fluctuate constantly, Peter has to keep riding waves. Today, <a href="https://www.youtube.com/watch?v=oFtjKbXKqbg" target="_blank" rel="noopener noreferrer">code is written by AI</a>, allowing him to maintain a hyper-lean one-man operation. If an AI experiment flops, it’s free content marketing; if it takes off, it prints cash. He rides the wave until he has enough dough.</p>
 
-      <p><a href="https://pandamixshow.com" target="_blank" rel="noopener noreferrer">YouTube demonetized copyrighted music</a>. Started earning less from YouTube. But then why <a href="https://levels.io/moving-to-chiang-mai/" target="_blank" rel="noopener noreferrer">move to Thailand</a>?? When you are low on money?? To save money.</p>
+      <h2>5. The Insider vs. The Influencer</h2>
 
-      <p>He ran <a href="https://levels.io/tubelytics/" target="_blank" rel="noopener noreferrer">Tubelytics</a>, I think it failed pretty much. He faced some problems as a digital nomad while building his <a href="https://levels.io/how-i-build-my-minimum-viable-products/" target="_blank" rel="noopener noreferrer">“digital automated startup”</a>.</p>
+      <p>Let's draw a line between both archetypes:</p>
 
-      <p><a href="https://nomadlist.com" target="_blank" rel="noopener noreferrer">NomadList</a>, <a href="https://remoteok.com" target="_blank" rel="noopener noreferrer">RemoteOk</a>, <a href="https://photoai.com" target="_blank" rel="noopener noreferrer">PhotoAI</a> – these 3 are, and I'm assuming here – for nomads, for nomads, for people making generated content on social media platforms/OnlyFans. He solved for his domain. His product didn’t come out by randomly hitting bricks at a wall, he faced them, he knew the problems, and solved them.</p>
+      <blockquote>
+        <p><strong>Mike is the B2B Domain Insider.</strong> He knows exactly what problem to solve, whom to hire, who holds the corporate credit card, and how to reach them. His distribution was built through a decade of executive leadership. Proven money, proven problems.</p>
+      </blockquote>
 
-      <p>The only thing he does differently is his distribution. Nomads are online, very online, that’s where his audience is. They are young, they want tools that help them stay nomads, and they are willing to pay. It's kind of a circle – Build for nomads, market it heavily as nomad success, nomads use it, there’s free marketing, there’s more nomads, more sales. It’s brilliant.</p>
+      <blockquote>
+        <p><strong>Peter is the Cultural Native.</strong> His domain is fast-moving, young, and unorganized—waves in an ocean of digital nomads. He rides each wave rapidly, launches constantly, and posts like an influencer to keep his distribution channel warm.</p>
+      </blockquote>
 
-      <p>And he hasn’t lied about any of this, he <a href="https://levels.io" target="_blank" rel="noopener noreferrer">blogs it meticulously</a>. But, that’s his marketing, that’s not his honesty meter.</p>
-
-      <p>He holds a <a href="https://levels.io/projects#proj-bachelor-of-science-bsc-in-business-administration-at-vu-university-amsterdam" target="_blank" rel="noopener noreferrer">bachelor’s</a> and <a href="https://levels.io/projects#proj-master-of-science-msc-in-business-administration-at-rotterdam-school-of-management-erasmus-university" target="_blank" rel="noopener noreferrer">Master’s</a>, his YouTube experience and his network that he built user by user. He is the domain/industry expert, like it or not.</p>
-
-      <p>But then why not build and stop, well he can’t. That’s just how the industry works. Nomads will switch their ideas and locations according to trends. Peter has to keep riding the trend to cater to his audience. AI helps him do it way faster, and also helps him keep it to a one-man business model.</p>
-
-      <p><a href="https://www.youtube.com/watch?v=oFtjKbXKqbg" target="_blank" rel="noopener noreferrer">Code is written by AI</a>, it’s probably not gonna be used by his audience, in the off chance it does – if it fails, it’s free marketing, if it doesn’t it’s sales. This is why he keeps building. To capture the trend, and the cash it flows. Keep riding the waves until you have enough dough.</p>
-
-      <hr class="section-break" />
-
-      <p>Let's draw a line between both of them.</p>
-
-      <p>Mike is precise, he knows exactly what to solve, whom to hire, who is the customer, and how to market. His distribution was his work he did previously. The man everyone knows in the industry. The man who can be trusted to solve their problem. Proven Money, Proven Problems.</p>
-
-      <p>Peter is the people’s man. The industry itself is a loose one, hop on to the next idea the second you can. It’s unorganized, it’s young, it’s messy – it’s waves in an ocean of nomads. Ride it, catch the waves one by one – keep building.</p>
-
-      <p>This difference shows. Peter has countless projects and is <a href="https://x.com/levelsio" target="_blank" rel="noopener noreferrer">constantly posting like an influencer</a>. Mike has 5, and works like a businessman promoting his business.</p>
+      <p>This contrast is stark. Peter has launched countless projects, posting daily to his massive audience. Mike runs a tight portfolio of five products, operating like a traditional business owner.</p>
 
       <figure class="post-figure pie-figure">
         <img src="images/levelsio-projects-pie.png" alt="Pieter Levels projects breakdown pie chart: 8% success, 17% failed, 61% N/A" />
+        <figcaption>Pieter Levels' historical project scorecard: an ~8% success rate across 100+ experiments</figcaption>
       </figure>
 
-      <p>What do we learn from this?</p>
+      <h2>6. The Uncomfortable Truth</h2>
 
-      <p>First, as a solo founder – you have neither domain expertise, nor the distribution prowess of either of them. Think about it, and both take work – that’s their moat. This is why they sell, and you don’t.</p>
+      <p>What do we actually learn from this?</p>
 
-      <p>Well how do we solve this? If I knew, I wouldn’t be posting this. All questions, no answer.</p>
+      <p>As a solo beginner founder, <strong>you have neither the domain expertise of Mike Hill, nor the distribution power of Pieter Levels.</strong> Both advantages take a decade of hard, focused work to build. That was their moat all along. That is why they sell, and that is why you and I get ghosted by local gyms.</p>
+
+      <p>How do we solve this if we are starting from zero? If I had the answer, I wouldn’t be writing this essay. All questions, no answer.</p>
 
       <p class="sign-off">Until the next one!</p>
     </article>
