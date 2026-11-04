@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sahil Samel | Reverse Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.svg" />
   <style>
     :root {
       --bg: #fafafa;
@@ -81,6 +83,46 @@
       font-size: 0.88rem;
       font-weight: 500;
     }
+    .post-flex {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .post-text {
+      flex: 1;
+    }
+    .post-thumb {
+      flex-shrink: 0;
+      width: 96px;
+      height: 96px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fff;
+      padding: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .post-thumb:hover {
+      transform: translateY(-2px);
+      border-color: #bbb;
+    }
+    .post-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    @media (max-width: 600px) {
+      .post-flex {
+        flex-direction: column-reverse;
+      }
+      .post-thumb {
+        width: 100%;
+        height: 140px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -91,9 +133,16 @@
 
   <h2>Recent Teardowns</h2>
   <article class="post-item">
-    <a class="post-link" href="blog/">Why you can't build your SaaS as an excellent engineer</a>
-    <p class="post-desc">Understanding the MOAT of the Successful — Mike Hill and Peter Levels. A Deep Dive into what seems to work for them.</p>
-    <div class="date">November 2026 &bull; 6 min read</div>
+    <div class="post-flex">
+      <div class="post-text">
+        <a class="post-link" href="blog/">Why you can't build your SaaS as an excellent engineer</a>
+        <p class="post-desc">Understanding the MOAT of successful SaaS, Distribution v/s product and why this is no get rich quick scheme for an engineer.</p>
+        <div class="date">November 2026 &bull; 6 min read</div>
+      </div>
+      <a href="blog/" class="post-thumb" aria-label="Why you can't build your SaaS as an excellent engineer">
+        <img src="favicon.svg" alt="Exploded schematic" />
+      </a>
+    </div>
   </article>
 </body>
 </html>

@@ -1,0 +1,328 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<!-- SVG created with Arrow, by QuiverAI (https://quiver.ai) -->
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#299d40"/>
+      <stop offset=".55" stop-color="#139336"/>
+      <stop offset="1" stop-color="#087c32"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f1f1ef"/>
+      <stop offset=".45" stop-color="#c5c8cc"/>
+      <stop offset="1" stop-color="#90969e"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#454a55"/>
+      <stop offset="1" stop-color="#1b1d25"/>
+    </linearGradient>
+    <linearGradient id="gold">
+      <stop stop-color="#fff37d"/>
+      <stop offset=".5" stop-color="#ffcf24"/>
+      <stop offset="1" stop-color="#ce8c00"/>
+    </linearGradient>
+    <pattern id="contacts" width="5" height="20" patternUnits="userSpaceOnUse">
+      <rect width="5" height="20" fill="#efbe16"/>
+      <path d="M1 0V20" stroke="#fff071" stroke-width="1"/>
+      <path d="M4 0V20" stroke="#a67400" stroke-width=".7"/>
+    </pattern>
+    <g id="capacitor" stroke="#151c1c" stroke-width="2.4">
+      <path d="M-10-2V15Q0 24 10 15V-2" fill="#555b64"/>
+      <ellipse cy="-2" rx="10" ry="6" fill="#bec7d2"/>
+    </g>
+    <g id="pin" stroke="#594400" stroke-width="1.8" stroke-linejoin="round">
+      <path d="M0 0 8-4 14-1 14 20 6 25 0 21Z" fill="url(#gold)"/>
+      <path d="M6 3V25M0 0 6 3 14-1" fill="none"/>
+    </g>
+    <g id="tinyChip" stroke="#0c1414" stroke-width="2.4" stroke-linejoin="round">
+      <path d="M0 0 20-11 41 1 21 13Z" fill="#343a43"/>
+      <path d="M0 0V12L21 24 41 12V1L21 13Z" fill="#161b20"/>
+      <path d="M5 5V14M13 10V19M27 14V21M35 9V16" stroke="#d9d6a3" stroke-width="3"/>
+    </g>
+    <g id="fan">
+      <ellipse rx="40" ry="53" fill="#171b23" stroke="#07090b" stroke-width="3"/>
+      <ellipse rx="32" ry="43" fill="#080c11" stroke="#424750" stroke-width="2"/>
+      <g fill="#303640" stroke="#090b0f" stroke-width="2">
+        <path d="M-1-8C-20-18-25-28-18-36-9-39 3-28 7-12Z"/>
+        <path d="M6-10C5-30 8-38 14-34 27-24 31-12 14-3Z"/>
+        <path d="M13-4C29-13 32-5 31 7 30 23 21 29 10 9Z"/>
+        <path d="M7 9C25 22 24 36 15 37 3 36-5 26-4 12Z"/>
+        <path d="M-6 9C-8 30-17 33-24 20-31 7-23-1-13-2Z"/>
+        <path d="M-12-4C-30 1-30-11-25-19-19-26-9-16-5-10Z"/>
+      </g>
+      <ellipse rx="12" ry="15" fill="#444c57" stroke="#080b0e" stroke-width="2"/>
+    </g>
+  </defs>
+  <g id="motherboard" stroke="#081b11" stroke-width="3" stroke-linejoin="round">
+    <path d="M148 748 508 541 878 749 518 951Z" fill="url(#board)"/>
+    <path d="M148 748V767L518 970V951Z" fill="#087132"/>
+    <path d="M518 951 878 749V768L518 970Z" fill="#035b2c"/>
+    <g id="circuit-traces" fill="none" stroke="#087a30" stroke-width="2">
+      <path d="M175 744 241 706 234 700V715L273 738 249 752V774L365 840H391L447 872V888L515 926"/>
+      <path d="M192 739 233 716V733L262 750 254 759V769L365 832H392L454 866"/>
+      <path d="M211 729 226 738 247 738M270 771 369 823H392L460 861"/>
+      <path d="M281 737 306 751 281 766 367 812M293 731 321 747 300 761"/>
+      <path d="M386 860 410 846H430L468 868M393 850 421 833H438L476 855"/>
+      <path d="M539 926 568 909 552 899M551 933 584 914 568 905M574 921 600 907 586 895"/>
+      <path d="M607 904 652 879V864L681 848M618 898 664 872V856L693 840M631 889 676 865V852L705 834"/>
+      <path d="M721 799 754 779 766 785 790 771M738 816 773 797 783 802 822 780"/>
+      <path d="M804 737 759 711 744 720 685 688M815 729 758 698 744 707 686 674"/>
+      <path d="M365 666 391 650 409 659M356 658 389 639 417 654"/>
+      <path d="M475 592 495 580 529 598 540 591 602 626M483 602 510 586"/>
+      <path d="M613 716 641 700 676 719M623 726 649 712 684 730"/>
+      <path d="M322 704 358 724 379 712M327 695 361 714 381 703"/>
+    </g>
+    <g id="board-vias" fill="#076c2c" stroke="none">
+      <ellipse cx="180" cy="750" rx="7" ry="4"/>
+      <ellipse cx="847" cy="749" rx="7" ry="4"/>
+      <ellipse cx="517" cy="935" rx="7" ry="4"/>
+      <ellipse cx="718" cy="814" rx="8" ry="5"/>
+      <ellipse cx="400" cy="866" rx="7" ry="4"/>
+    </g>
+    <g fill="#5daf44" stroke="#087431" stroke-width="2">
+      <ellipse cx="718" cy="814" rx="6" ry="3"/>
+      <ellipse cx="400" cy="866" rx="5" ry="3"/>
+    </g>
+    <g id="rear-connectors" fill="url(#metal)" stroke="#181e1c">
+      <path d="M268 661 292 648 314 661 314 694 289 708 268 695Z"/>
+      <path d="M284 649 307 636 329 648 329 685 306 697 285 685Z"/>
+      <path d="M300 639 318 629 341 642 341 679 323 689 323 652Z"/>
+      <path d="M318 629 339 618 361 631 361 668 341 680 341 642Z"/>
+      <path d="M340 618 350 613 370 625 370 661 360 668 360 631Z"/>
+      <path d="M269 662 289 674V707M285 650 306 662V696M300 639 323 652M318 629 341 642M340 618 360 631" fill="none"/>
+      <path d="M275 673 283 677V691L275 687M291 661 299 665V681L291 677M330 650 336 653V668L330 665" fill="#e9edf0" stroke="#959ca1" stroke-width="1"/>
+    </g>
+    <g id="surface-components">
+      <use href="#tinyChip" transform="translate(213 758) scale(.9)"/>
+      <use href="#tinyChip" transform="translate(236 746) scale(.8)"/>
+      <use href="#tinyChip" transform="translate(256 714) scale(.72)"/>
+      <use href="#tinyChip" transform="translate(426 842)"/>
+      <use href="#tinyChip" transform="translate(466 863)"/>
+      <use href="#tinyChip" transform="translate(440 880)"/>
+      <use href="#tinyChip" transform="translate(473 900)"/>
+      <use href="#tinyChip" transform="translate(509 883) scale(.9)"/>
+      <path d="M724 793 738 785 751 792V802L737 809 724 802Z" fill="#232a26"/>
+      <path d="M726 795 737 801 737 806 726 800Z" fill="#b8ac79" stroke-width="1"/>
+      <path d="M292 789 365 747 449 792V802L377 842 292 798Z" fill="#181d22"/>
+      <path d="M293 788 365 747 449 792 376 832Z" fill="#3b404c"/>
+      <path d="M653 750 707 720 757 747V756L703 786 653 758Z" fill="#17231e"/>
+      <path d="M655 748 707 720 756 747 703 776Z" fill="#3c414d"/>
+      <path d="M654 666 672 655 726 686V710L709 720 654 689Z" fill="#141b1b"/>
+      <path d="M654 666 709 697 726 686M709 697V720" fill="#323844"/>
+      <path d="M674 665 716 689 710 692 668 668Z" fill="#080d10"/>
+      <path d="M720 695 740 684 795 715V740L778 750 720 718Z" fill="#272d36"/>
+      <path d="M720 695 778 727 795 715M778 727V750" fill="none"/>
+      <path d="M736 696 782 721 788 717 743 692Z" fill="#080c10"/>
+    </g>
+    <g id="capacitor-bank">
+      <use href="#capacitor" x="310" y="705"/>
+      <use href="#capacitor" x="329" y="715"/>
+      <use href="#capacitor" x="349" y="704"/>
+      <use href="#capacitor" x="347" y="689"/>
+      <use href="#capacitor" x="370" y="691"/>
+      <use href="#capacitor" x="377" y="671"/>
+      <use href="#capacitor" x="396" y="679"/>
+      <use href="#capacitor" x="666" y="684"/>
+      <use href="#capacitor" x="792" y="756"/>
+      <use href="#capacitor" x="809" y="747"/>
+      <use href="#capacitor" x="819" y="728"/>
+      <use href="#capacitor" x="476" y="805"/>
+      <use href="#capacitor" x="551" y="895"/>
+    </g>
+    <g id="gold-test-points" fill="url(#gold)" stroke="#56501b" stroke-width="2">
+      <path d="M291 762 298 758 305 762V768L298 773 291 769Z"/>
+      <path d="M312 750 319 746 327 750V756L319 760 312 756Z"/>
+      <path d="M298 760V769M319 748V757"/>
+      <ellipse cx="526" cy="916" rx="4" ry="2" stroke="none"/>
+    </g>
+    <g id="expansion-slots" fill="#edeee6" stroke="#262720">
+      <path d="M499 835 628 761 646 772V794L518 867 499 856Z"/>
+      <path d="M499 835 518 846 646 772M518 846V867" fill="none"/>
+      <path d="M514 836 621 774 626 777 519 839Z" fill="#343833" stroke-width="1"/>
+      <path d="M620 773 629 768 635 771 626 776Z" fill="#343833" stroke-width="1"/>
+      <path d="M530 850 659 776 675 785V809L548 881 530 871Z"/>
+      <path d="M530 850 548 860 675 785M548 860V881" fill="none"/>
+      <path d="M544 850 651 789 657 792 550 853Z" fill="#343833" stroke-width="1"/>
+      <path d="M650 788 660 782 666 785 656 791Z" fill="#343833" stroke-width="1"/>
+      <path d="M562 861 686 788 703 798V822L579 892 562 882Z"/>
+      <path d="M562 861 579 872 703 798M579 872V892" fill="none"/>
+      <path d="M575 860 679 800 685 803 581 863Z" fill="#343833" stroke-width="1"/>
+      <path d="M678 799 688 794 694 797 684 802Z" fill="#343833" stroke-width="1"/>
+    </g>
+    <g id="cpu-socket">
+      <path d="M395 726 513 658 638 726V739L519 804 395 739Z" fill="#20252b"/>
+      <path d="M395 726 515 659 638 726 519 791Z" fill="#343a43"/>
+      <path d="M416 718 513 665 617 722V733L519 782 416 730Z" fill="#11191b"/>
+      <path d="M418 717 514 666 615 721 518 774 418 727Z" fill="url(#dark)"/>
+    </g>
+    <g id="processor-package">
+      <path d="M365 629 510 546 663 633V651L518 733 365 647Z" fill="#05662c"/>
+      <path d="M365 629 510 546 663 633 518 716Z" fill="#0a9a38"/>
+      <path d="M382 627 509 555 646 632 519 704Z" fill="#06832f" stroke-width="2"/>
+      <path d="M431 616 505 574 594 624V638L520 681 431 631Z" fill="#07585b"/>
+      <path d="M438 612 506 576 588 622V633L528 665Q520 669 510 664L441 626Q435 623 438 612Z" fill="url(#metal)"/>
+      <path d="M440 615 511 655Q520 662 531 657L586 626" fill="none" stroke="#e3e6e8"/>
+      <g stroke-width="2">
+        <use href="#pin" x="397" y="618"/>
+        <use href="#pin" x="414" y="628"/>
+        <use href="#pin" x="430" y="637"/>
+        <use href="#pin" x="447" y="646"/>
+        <use href="#pin" x="464" y="655"/>
+        <use href="#pin" x="480" y="664"/>
+        <use href="#pin" x="497" y="674"/>
+        <use href="#pin" x="534" y="674"/>
+        <use href="#pin" x="553" y="663"/>
+        <use href="#pin" x="572" y="652"/>
+        <use href="#pin" x="590" y="641"/>
+        <use href="#pin" x="608" y="630"/>
+        <use href="#pin" x="625" y="620"/>
+        <use href="#pin" x="417" y="598"/>
+        <use href="#pin" x="436" y="587"/>
+        <use href="#pin" x="455" y="576"/>
+        <use href="#pin" x="571" y="587"/>
+        <use href="#pin" x="589" y="596"/>
+        <use href="#pin" x="606" y="605"/>
+      </g>
+      <ellipse cx="519" cy="710" rx="4" ry="2" fill="#f4db3c" stroke="none"/>
+    </g>
+  </g>
+  <g id="floating-processor" stroke="#131719" stroke-width="3" stroke-linejoin="round">
+    <path d="M375 508 505 433 653 514V539L520 614 375 535Z" fill="#959ba4"/>
+    <path d="M375 508 507 434 653 514 520 589Z" fill="url(#metal)"/>
+    <path d="M375 508 520 589V614M520 589 653 514" fill="none"/>
+    <path d="M385 519V540M399 527V548M413 535V556" stroke="#cbd0d5" stroke-width="3"/>
+    <path d="M408 503 505 448 619 508V521L524 574 406 517Z" fill="#8b9097"/>
+    <path d="M408 503 506 449 618 508 523 563Z" fill="#d5d8db"/>
+    <path d="M421 486 504 439 605 492V513L528 557Q520 562 509 557L421 511Z" fill="#a5abb3"/>
+    <path d="M424 485 504 439 605 492 528 545Q522 550 512 544L423 495Q418 492 424 485Z" fill="url(#metal)"/>
+    <path d="M450 469 465 461 565 517 553 526Z" fill="#e7e9eb" stroke="none"/>
+    <path d="M423 497 512 547Q521 552 529 547L604 503" fill="none" stroke="#edf0f2" stroke-width="2"/>
+  </g>
+  <g id="left-expansion-card" stroke="#0d1012" stroke-width="3" stroke-linejoin="round">
+    <path d="M224 236 239 227 252 234 438 127 447 132 464 122 469 125 469 206 462 209 457 204 451 208 450 231 282 326 282 249 265 258 265 345 247 337 246 254 224 243Z" fill="#7e8691"/>
+    <path d="M224 236 239 227 252 234 438 127 447 132 258 243 245 251Z" fill="#d0d4d8"/>
+    <path d="M247 254 263 246 263 285 248 277Z" fill="#555d68" stroke="none"/>
+    <path d="M267 239 469 125 469 205 462 208 457 203 450 209 449 225 281 321 281 248 267 256Z" fill="#303743"/>
+    <path d="M283 309 357 266 357 281 282 325Z" fill="url(#contacts)" stroke-width="1.5"/>
+    <path d="M366 263 448 216 448 231 366 278Z" fill="url(#contacts)" stroke-width="1.5"/>
+    <path d="M284 244 426 162 431 165 431 214 290 296 284 293Z" fill="url(#dark)"/>
+    <path d="M289 248 427 168" stroke="#4a505a" stroke-width="2"/>
+    <path d="M455 160 462 155V170L455 175Z" fill="#e4e8e6"/>
+  </g>
+  <g id="top-memory-module" stroke="#0a0e0e" stroke-width="3" stroke-linejoin="round">
+    <path d="M503 126 511 121 680 215V233L674 237V245L680 249V258L675 261 680 264V275L673 280 591 234 590 229 582 226 582 232 503 188V169L508 167V159L503 156V149L508 146V139L503 136Z" fill="url(#dark)"/>
+    <path d="M508 184 581 225V232L507 191Z" fill="url(#contacts)" stroke-width="1"/>
+    <path d="M593 231 670 274V266L593 224Z" fill="url(#contacts)" stroke-width="1"/>
+    <path d="M514 145Q516 142 520 145L571 174V202Q571 206 566 204L515 176Z" fill="url(#dark)"/>
+    <path d="M600 194Q602 191 606 194L658 223V250Q658 254 653 251L600 222Z" fill="url(#dark)"/>
+    <g fill="#777d83" stroke="none">
+      <circle cx="580" cy="187" r="2"/>
+      <circle cx="587" cy="193" r="2"/>
+      <circle cx="593" cy="198" r="2"/>
+      <circle cx="581" cy="198" r="2"/>
+      <circle cx="588" cy="205" r="2"/>
+      <circle cx="580" cy="209" r="2"/>
+      <circle cx="592" cy="216" r="2"/>
+      <circle cx="666" cy="234" r="2"/>
+      <circle cx="666" cy="247" r="2"/>
+    </g>
+    <g fill="#c9b34c" stroke="none">
+      <ellipse cx="508" cy="134" rx="1.4" ry="3"/>
+      <ellipse cx="670" cy="263" rx="1.5" ry="3"/>
+    </g>
+  </g>
+  <g id="green-memory-module" stroke="#0a1710" stroke-width="3" stroke-linejoin="round">
+    <path d="M485 229 495 223 690 330V351L684 354V361L690 365V373L685 377V384L690 388V415L683 419 590 369 589 359 581 355V365L485 313V278L490 279V269L485 265V257L490 258V248L485 244Z" fill="#087c32"/>
+    <path d="M491 237 497 232 682 335V408L594 359 585 355 491 305Z" fill="#15973a" stroke="#176e32" stroke-width="2"/>
+    <path d="M490 304 580 354V364L490 314Z" fill="url(#contacts)" stroke-width="1"/>
+    <path d="M591 359 678 407V416L591 369Z" fill="url(#contacts)" stroke-width="1"/>
+    <path d="M499 252 506 249 560 279V323L554 327 499 296Z" fill="#353c44"/>
+    <path d="M502 256 555 285V320L502 291Z" fill="url(#dark)" stroke-width="1.5"/>
+    <path d="M602 309 609 305 663 335V379L657 383 602 352Z" fill="#2a343a"/>
+    <path d="M607 313 658 341V376L607 347Z" fill="#303942" stroke-width="1"/>
+    <g fill="#d3d32b" stroke="none">
+      <ellipse cx="494" cy="240" rx="2" ry="3"/>
+      <ellipse cx="672" cy="399" rx="2" ry="3"/>
+      <circle cx="568" cy="280" r="2"/>
+      <circle cx="568" cy="287" r="2"/>
+      <circle cx="573" cy="295" r="2"/>
+      <circle cx="573" cy="305" r="2"/>
+      <circle cx="573" cy="314" r="2"/>
+      <circle cx="582" cy="299" r="2"/>
+      <circle cx="582" cy="309" r="2"/>
+      <circle cx="591" cy="304" r="2"/>
+      <circle cx="591" cy="314" r="2"/>
+      <circle cx="591" cy="324" r="2"/>
+      <circle cx="671" cy="350" r="2"/>
+      <circle cx="674" cy="359" r="2"/>
+      <circle cx="674" cy="370" r="2"/>
+      <circle cx="674" cy="381" r="2"/>
+      <path d="M520 251 526 254 524 257 518 254M536 260 542 263 540 266 534 263M545 265 551 268 549 271 543 268M553 269 558 271 556 274 551 272"/>
+    </g>
+    <g fill="#218943" stroke="#165326" stroke-width="1">
+      <path d="M566 325 570 327V335L566 333ZM590 337 594 339V347L590 345Z"/>
+      <circle cx="494" cy="293" r="2"/>
+      <circle cx="674" cy="335" r="2"/>
+    </g>
+  </g>
+  <g id="lower-memory-module" stroke="#0a1111" stroke-width="3" stroke-linejoin="round">
+    <path d="M385 322 396 316 588 421V440L582 444V452L588 456V466L581 469V477L588 481V506L579 511 488 461V451L479 446V456L385 404V370L390 370V360L385 356V349L390 348V338L385 334Z" fill="#353e42"/>
+    <path d="M391 324 582 429V446L575 445 575 434 392 334Z" fill="#305149" stroke="none"/>
+    <path d="M390 396 477 444V453L390 405Z" fill="url(#contacts)" stroke-width="1"/>
+    <path d="M489 449 573 495V505L489 460Z" fill="url(#contacts)" stroke-width="1"/>
+    <path d="M400 345 407 341 462 372V414L457 418 400 387Z" fill="url(#dark)"/>
+    <path d="M404 349 457 378V410L404 382" fill="none" stroke="#454b56" stroke-width="2"/>
+    <path d="M499 400 505 396 562 428V469L557 473 499 442Z" fill="url(#dark)"/>
+    <g fill="#717b85" stroke="none">
+      <circle cx="395" cy="331" r="1.6"/>
+      <circle cx="414" cy="340" r="1.6"/>
+      <circle cx="425" cy="347" r="1.6"/>
+      <circle cx="436" cy="353" r="1.6"/>
+      <circle cx="448" cy="359" r="1.6"/>
+      <circle cx="459" cy="365" r="1.6"/>
+      <circle cx="469" cy="383" r="2"/>
+      <circle cx="477" cy="387" r="2"/>
+      <circle cx="486" cy="382" r="2"/>
+      <circle cx="490" cy="391" r="2"/>
+      <circle cx="468" cy="395" r="2"/>
+      <circle cx="477" cy="399" r="2"/>
+      <circle cx="487" cy="404" r="2"/>
+      <circle cx="468" cy="408" r="2"/>
+      <circle cx="478" cy="412" r="2"/>
+      <circle cx="487" cy="417" r="2"/>
+      <circle cx="469" cy="420" r="2"/>
+      <circle cx="478" cy="425" r="2"/>
+      <circle cx="487" cy="430" r="2"/>
+      <circle cx="570" cy="437" r="1.8"/>
+      <circle cx="571" cy="449" r="1.8"/>
+      <circle cx="570" cy="463" r="1.8"/>
+    </g>
+    <ellipse cx="576" cy="487" rx="1.8" ry="3" fill="#deb732" stroke="none"/>
+  </g>
+  <g id="graphics-card" stroke="#0c0d0e" stroke-width="3" stroke-linejoin="round">
+    <path d="M725 183 752 169 846 221V600L833 607 833 623 823 629 725 574Z" fill="#252933"/>
+    <path d="M735 177 836 226V620L824 629V233 725 183Z" fill="#4a4d53"/>
+    <path d="M725 183 733 179 824 232V628L725 574Z" fill="url(#metal)"/>
+    <path d="M735 177 836 226 846 221M836 226V604" fill="none"/>
+    <use href="#fan" transform="translate(775 273) rotate(-17)"/>
+    <path d="M739 303 751 315Q778 349 809 333V497Q772 451 739 465Z" fill="#171c24"/>
+    <path d="M745 316V460M754 326V458M765 336V459M776 341V464M787 341V473M799 338V483" stroke="#4f555e" stroke-width="4"/>
+    <path d="M748 319V458M758 331V458M770 338V461M782 341V467M792 340V476M805 337V490" stroke="#080d11" stroke-width="2"/>
+    <use href="#fan" transform="translate(775 535) rotate(-17)"/>
+    <path d="M728 187 821 236V621" fill="none" stroke="#e1e3e3" stroke-width="2"/>
+  </g>
+  <g id="cyan-installation-guides" fill="none" stroke="#00bcee" stroke-width="6" stroke-dasharray="10 7">
+    <path d="M283 298V740"/>
+    <path d="M344 294V820"/>
+    <path d="M656 276V461Q656 470 673 472L763 512"/>
+    <path d="M675 475V745"/>
+    <path d="M763 288V777" stroke-width="5"/>
+  </g>
+  <g id="guide-endpoints" fill="#00bcee">
+    <ellipse cx="344" cy="294" rx="10.5" ry="11.5"/>
+    <ellipse cx="283" cy="740" rx="10.5" ry="11.5"/>
+    <ellipse cx="344" cy="820" rx="11" ry="11.5"/>
+    <ellipse cx="656" cy="276" rx="10.5" ry="11"/>
+    <ellipse cx="675" cy="745" rx="10.5" ry="11"/>
+    <ellipse cx="763" cy="776" rx="10.5" ry="11.5"/>
+  </g>
+</svg>
